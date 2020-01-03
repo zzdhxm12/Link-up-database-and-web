@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NMM</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+<!-- js -->
+<script src="js/jquery.min.js"></script>
+<!-- //js -->
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Savory Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+
+</head>
+
+<body>
+  <!-- header -->
+  	<div class="header">
+  		<div class="container">
+  			<div class="header-top">
+  				<div class="logo">
+  					<a href="index.html"><img src="images/logo.png" alt=" " /></a>
+  				</div>
+  				<div class="clearfix"> </div>
+  			</div>
+  			<div class="header-bottom">
+  				<span class="menu"><img src="images/menu.png" alt=" "/></span>
+  				<ul class="nav1">
+  					<center>
+  					<li class="cap"><a href="index.html">HOME</a></li>
+  					<li><a href="ranking.html">월/주간 순위</a></li>
+  					<li><a href="ack.html">마카롱 가게 정보</a></li>
+  					<li><a href="board.html">게시판</a></li>
+  					<li><a href="#feedback" class="scroll">FEED BACK</a></li>
+
+  					<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> <?php include 'lo.php'; echo $lo ?></a></li>
+  				</ul>
+  				<!-- script for menu -->
+  					<script>
+  						$( "span.menu" ).click(function() {
+  						$( "ul.nav1" ).slideToggle( 300, function() {
+  						 // Animation complete.
+  						});
+  						});
+  					</script>
+  				<!-- //script for menu -->
+
+  			</div>
+  		</div>
+  	</div>
+
+    <div id="feedback" class="feedback">
+      <div class="container">
+        <div class="feedback-info">
+          <h3>   BOARD</h3>
+          <br><br>
+    <?php include 'board.php';?>
+          <table class="table table-hover">
+    					 <thead>
+    						 <tr>
+    							 <th scope="col" class="no">번호</th>
+    							 <th scope="col" class="title">제목</th>
+    							 <th scope="col" class="author">작성자</th>
+    							 <th scope="col" class="date">작성일</th>
+    						 </tr>
+    					 </thead>
+    					 <tbody>
+                 <?php
+    						$bsql = 'SELECT * FROM board_table order by num desc';
+    						$bresult = $bmysqli->query($bsql);
+    						while($brow = $bresult->fetch_assoc())
+    						{
+    							$datetime = explode(' ', $brow['datee']);
+    							$date = $datetime[0];
+    							$time = $datetime[1];
+    							if($date == date('m/d/Y'))
+    								$brow['datee'] = $time;
+    							else
+    								$brow['datee'] = $date;
+    					?>
+                 <tr>
+                   <td class="no"><?php echo $brow['num'];?></td>
+                   					<td class="title"><a href="./view.php?bno=<?php echo $brow['num']?>"><?php echo $brow['title'];?></a></td>
+                   					<td class="author"><?php echo $brow['id'];?></td>
+                   					<td class="date"><?php echo $brow['datee'];?></td>
+    				</tr>
+            <?php
+    						}
+    					?>
+    			</tbody>
+    				 </table>
+
+        </div>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<?php   session_start();?>
+<html>
+<head>
+<title>NMM</title>
+<link href="css/style.css?ver=1" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Cube Sign In Form,Login Forms,Sign up Forms,Registration Forms,News latter Forms,Elements"./>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+<!--webfonts-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<!--//webfonts-->
+<style>
+body{background-color: red;}
+</style>
+</head>
+<body>
+	<h1>LOGIN</h1>
+		<div class="app-block">
+      <?php if(!isset($_SESSION['user_id']) || !isset($_SESSION['user_name'])) {
+                         ?>
+			<form method="post" action="../term/login_ok.php">
+				<br>
+				<input autocomplete="off" type="text" name="user_id" class="text" value="Email Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email Address';}" >
+				<input type="password" name="user_pw" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+				<div class="clear"></div>
+				<div class="submit"><input type="submit" value="Login" ></div>
+				<br>
+      </form>
+      <div class="submit"><input type="submit" value="Sign in" onClick="location.href='signin.html'"></div>
+      <?php } else {?>
+        <h4>로그아웃하시겠습니까? </h4><br>
+        <div class="clear"></div>
+        <br><br><br><br><br><br>
+          <div class="submit"><input type="submit" value="돌아가기" onClick="location.href='../term/index.html'"></div>
+      <div class="submit"><input type="submit" value="Logout" onClick="location.href='../term/logout.php'"></div>
+          <?php } ?>
+		</div>
+	<!--start-copyright-->
+   		<div class="copy-right">
+				<p>Copyright &copy; 2015  All rights  Reserved | Template by &nbsp;<a href="http://w3layouts.com">W3layouts</a></p>
+		</div>
+	<!--//end-copyright-->
+</body>
+</html>

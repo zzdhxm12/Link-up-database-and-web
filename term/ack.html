@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NMM</title>
+<link href="css/style.css?ver=1" rel="stylesheet" type="text/css" media="all" />
+<link href="css/bootstrap.css?ver=1" rel="stylesheet" type="text/css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+<!-- js -->
+<script src="js/jquery.min.js"></script>
+<!-- //js -->
+<!-- //js 모달-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Savory Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<style>
+.button4{
+	width:20%;
+	background-color: white;
+  color: black;
+  border: 1px solid #38d1fd;
+}
+.button4:hover {
+    background-color: #38d1fd;
+    color: white;
+}
+.kinds{
+	width:20%;
+	height: 25%;
+	background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+</head>
+
+<body>
+	<!-- header -->
+		<div class="header">
+			<div class="container">
+				<div class="header-top">
+					<div class="logo">
+						<center>
+							<a href="index.html"><img src="nmm.png" alt=" " /></a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="header-bottom">
+					<span class="menu"><img src="images/menu.png" alt=" "/></span>
+					<ul class="nav1">
+						<center>
+						<li><a href="index.html">HOME</a></li>
+						<li class="cap"><a href="ack.html">마카롱 가게 정보</a></li>
+						<li><a href="board.html">게시판</a></li>
+						<li><a href="/web6/login.html"><span class="glyphicon glyphicon-log-in"></span> <?php include 'lo.php'; echo $lo ?></a></li>
+					</ul>
+					<!-- script for menu -->
+					<script>
+							$( "span.menu" ).click(function() {
+							$( "ul.nav1" ).slideToggle( 300, function() {
+							 // Animation complete.
+							});
+							});
+					</script>
+					<!-- //script for menu -->
+				</div>
+			</div>
+		</div>
+		<center>
+    <div class="container">
+
+			<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2">조회</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal2" role="dialog">
+				<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">마카롱 가게 조회</h4>
+						</div>
+						<div class="modal-body">
+								<label for="macaronname">가게 이름</label>
+								<input autocomplete="off" type="text" name="macaronname" style="width:100%;" id="macaronname">
+								<br><br>
+								<textarea class="form-control" rows="17" id="smaca" ></textarea>
+								<hr>
+								<button type="submit" class="btn btn-default" onclick="smac()">search</button>
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+								<script>
+												function smac(){
+													var input5=  document.getElementById("macaronname").value;
+
+												 if (input5.length == 0) {
+														document.getElementById("smaca").innerHTML = "";
+														return;
+													} else {
+														var xmlhttp = new XMLHttpRequest();
+														xmlhttp.onreadystatechange = function() {
+															if (this.readyState == 4 && this.status == 200) {
+																document.getElementById("smaca").innerHTML = this.responseText;
+															}
+														};
+														xmlhttp.open("GET", "macaron_search.php?mac=" + input5, true);
+														xmlhttp.send();
+													}
+												}
+												</script>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal3">등록</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal3" role="dialog">
+				<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">마카롱 가게 등록</h4>
+						</div>
+						<div class="modal-body">
+							<form action="macaron_insert.php" method="post" enctype="multipart/form-data">
+								<label for="macaronname">가게명:</label>
+								<input autocomplete="off" type="text" name="macaronname" style="width:100%;">
+								<label for="mlocation">위치:</label>
+			  				<input autocomplete="off" type="text" class="form-control" name="mlocation">
+								<label for="mday">영업 요일:</label>
+								<input autocomplete="off" type="text" class="form-control" name="mday">
+								<label for="mtime">영업 시간:</label>
+			  				<input autocomplete="off" type="text" class="form-control" name="mtime">
+								<label for="mkinds">판매 종류:</label>
+								<input autocomplete="off" type="text" class="form-control" name="mkinds">
+
+								<label>이미지:</label>
+																<!--<INPUT TYPE=hidden name=mode value=insert>-->
+								<input type="file" name="imgs">
+								<hr>
+								<button type="submit" class="btn btn-default">insert</button>
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</form>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal4">추천</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal4" role="dialog">
+				<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">마카롱 가게 등록</h4>
+						</div>
+						<div class="modal-body">
+							<form action="macaron_good.php" method="post" enctype="multipart/form-data">
+								<label for="macaronname">가게명:</label>
+								<input autocomplete="off" type="text" name="macaronname" style="width:100%;">
+								<hr>
+								<button type="submit" class="btn btn-default">good</button>
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</form>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<hr>
+
+    		<?php include 'board.php';?>
+					<?php
+    				$mack = "SELECT name,location FROM macaron";
+    				$result=$bmysqli->query($mack);
+    				if($result->num_rows>0)
+            	{
+                while($row=$result->fetch_assoc())
+                  {
+                    $parray[$i]=$row['name'];
+                   	$narray[$i]=$row['location'];
+          ?>
+					<div class="kinds">
+          <?php
+            				$ll=$row['name'];
+										echo $row['location']; echo "<br>";
+            				echo "<img src='imageview.php?name=$ll' style='width:210px;height:140px;'/>";
+										echo "<br>";
+										echo $row['name'];
+										echo "<br>";
+          ?>
+					</div>
+					<br><br>
+          <?php $i++;}
+               }
+               else {
+                 echo "0 result";
+               }
+   $bmysqli->close();
+  ?>
+
+</body>
+</html>
