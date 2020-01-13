@@ -1,4 +1,4 @@
-# link up database and web
+# Link up database and web
 Create my own web
 
 
@@ -14,6 +14,8 @@ Create my own web
 ### 1. 전체 구조도
 
 ![image](https://user-images.githubusercontent.com/53864655/71870045-bc57ae00-3157-11ea-8fef-bf2d454ce8fd.png)
+
+
 
 ### 2. Database 설계
 
@@ -82,17 +84,25 @@ Create my own web
 
 ![image](https://user-images.githubusercontent.com/53864655/72234410-46988a00-3610-11ea-8893-4aec281dac52.png)
 
+* 웹페이지 상단에 홈페이지 이름, 홈/게시판/마카롱 가게 정보 등의 탭이 있고 로그인/회원가입 아이콘, 검색 창이 존재
+
 ### 2. 월/주간 순위
 
 ![image](https://user-images.githubusercontent.com/53864655/72234417-4f895b80-3610-11ea-8d6c-1e97d3187790.png)
+
+* 월별/지역별 마카롱 가게 맛집 순위 table이 존재
 
 ### 3. 마카롱 가게 정보
 
 ![image](https://user-images.githubusercontent.com/53864655/72234423-57490000-3610-11ea-8954-af0c48de3bf1.png)
 
+* 마카롱 가게 정보 탭에는 지역별 마카롱 가게들의 OPEN 요일, OPEN/CLOSE 시간, 판매 마카롱 종류 등의 정보 표기
+
 ### 4. 게시판
 
 ![image](https://user-images.githubusercontent.com/53864655/72234427-60d26800-3610-11ea-8e36-a3f98d1072be.png)
+
+* 게시판에서 회원 후기 작성 가능
 
 ### 4-1. 게시글
 
@@ -106,6 +116,13 @@ Create my own web
 
 ![image](https://user-images.githubusercontent.com/53864655/72234449-70ea4780-3610-11ea-89c7-296d9d6b0adf.png)
 
+* 로그인, 회원가입은 기존 다른 웹 페이지와 동일한 기능 적용
+
 ### 6. 회원가입
 
 ![image](https://user-images.githubusercontent.com/53864655/72234451-72b40b00-3610-11ea-8c7a-e2b232fb2b1b.png)
+
+* 회원가입을 하면 일반회원으로 등급이 분류되는데, 등급에는 일반회원, 가게주인, 관리자가 존재
+* 일반회원은 마카롱 가게 순위를 매기는데 투표와 게시판 후기글 작성이 가능 
+* 가게주인은 마카롱 가게 등록 및 가게 정보 입력이 가능
+* 관리자는 모든 DB관리, 게시판 관리가 가능
