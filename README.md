@@ -79,18 +79,33 @@ Create my own web
 ## UI Design
 
 ### 1. 홈
-![image](https://user-images.githubusercontent.com/53864655/71870387-1ad15c00-3159-11ea-95bf-38a8731a5850.png)
+
+![image](https://user-images.githubusercontent.com/53864655/72234410-46988a00-3610-11ea-8893-4aec281dac52.png)
+
 ### 2. 월/주간 순위
-![image](https://user-images.githubusercontent.com/53864655/71870402-23299700-3159-11ea-93a4-3844b0dd200f.png)
+
+![image](https://user-images.githubusercontent.com/53864655/72234417-4f895b80-3610-11ea-8d6c-1e97d3187790.png)
+
 ### 3. 마카롱 가게 정보
-![image](https://user-images.githubusercontent.com/53864655/71870414-2e7cc280-3159-11ea-8026-0b1a107f7801.png)
+
+![image](https://user-images.githubusercontent.com/53864655/72234423-57490000-3610-11ea-8954-af0c48de3bf1.png)
+
 ### 4. 게시판
-![image](https://user-images.githubusercontent.com/53864655/71870424-363c6700-3159-11ea-8781-b0216725b7d1.png)
+
+![image](https://user-images.githubusercontent.com/53864655/72234427-60d26800-3610-11ea-8e36-a3f98d1072be.png)
+
 ### 4-1. 게시글
-![image](https://user-images.githubusercontent.com/53864655/71870440-42c0bf80-3159-11ea-8d5b-27135916794c.png)
+
+![image](https://user-images.githubusercontent.com/53864655/72234434-64fe8580-3610-11ea-9ef5-fdaa40c131a4.png)
+
 ### 4-2. 게시글 작성
-![image](https://user-images.githubusercontent.com/53864655/71870448-4a806400-3159-11ea-9700-ca7d4fafa04b.png)
+
+![image](https://user-images.githubusercontent.com/53864655/72234444-6cbe2a00-3610-11ea-8bcb-ea22eef70357.png)
+
 ### 5. 로그인
-![image](https://user-images.githubusercontent.com/53864655/71870459-52d89f00-3159-11ea-84e4-68e89ad65df5.png)
+
+![image](https://user-images.githubusercontent.com/53864655/72234449-70ea4780-3610-11ea-89c7-296d9d6b0adf.png)
+
 ### 6. 회원가입
-![image](https://user-images.githubusercontent.com/53864655/71870470-5c620700-3159-11ea-97c9-cef7153c3916.png)
+
+![image](https://user-images.githubusercontent.com/53864655/72234451-72b40b00-3610-11ea-8c7a-e2b232fb2b1b.png)
