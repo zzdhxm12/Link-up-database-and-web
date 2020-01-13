@@ -42,42 +42,6 @@ Create my own web
 
 ![image](https://user-images.githubusercontent.com/53864655/71870213-70593900-3158-11ea-95dc-be3cacfd33ea.png)
 
-## Sequnce Diagram
-
-### 1. 마카롱 가게 정보 제공
-
-![image](https://user-images.githubusercontent.com/53864655/71870233-8c5cda80-3158-11ea-86f2-bee47f18caee.png)
-
-### 2. 게시판 입력
-
-![image](https://user-images.githubusercontent.com/53864655/71870257-a3033180-3158-11ea-8ae3-a719fa014138.png)
-
-### 3. 로그인
-
-![image](https://user-images.githubusercontent.com/53864655/71870269-b2827a80-3158-11ea-8e2d-81171625dadd.png)
-
-### 4. 회원가입
-
-![image](https://user-images.githubusercontent.com/53864655/71870274-b9a98880-3158-11ea-90f2-551bd85364f6.png)
-
-## Usecase
-
-### 1.마카롱 가게 정보 제공
-
-![image](https://user-images.githubusercontent.com/53864655/72234394-2a94e880-3610-11ea-8a46-209f700611f7.png)
-
-### 2. 게시판 입력
-
-![image](https://user-images.githubusercontent.com/53864655/71870323-de056500-3158-11ea-828f-5923c551033d.png)
-
-### 3.로그인
-
-![image](https://user-images.githubusercontent.com/53864655/71870337-eb225400-3158-11ea-99ea-85f104ae9fe9.png)
-
-### 4.회원가입
-
-![image](https://user-images.githubusercontent.com/53864655/71870349-f1b0cb80-3158-11ea-8fd4-78d0fff8f314.png)
-
 ## UI Design
 
 ### 1. 홈
@@ -126,3 +90,40 @@ Create my own web
 * 일반회원은 마카롱 가게 순위를 매기는데 투표와 게시판 후기글 작성이 가능 
 * 가게주인은 마카롱 가게 등록 및 가게 정보 입력이 가능
 * 관리자는 모든 DB관리, 게시판 관리가 가능
+
+
+## Sequnce Diagram
+
+### 1. 마카롱 가게 정보 제공
+
+![image](https://user-images.githubusercontent.com/53864655/71870233-8c5cda80-3158-11ea-86f2-bee47f18caee.png)
+
+### 2. 게시판 입력
+
+![image](https://user-images.githubusercontent.com/53864655/71870257-a3033180-3158-11ea-8ae3-a719fa014138.png)
+
+### 3. 로그인
+
+![image](https://user-images.githubusercontent.com/53864655/71870269-b2827a80-3158-11ea-8e2d-81171625dadd.png)
+
+### 4. 회원가입
+
+![image](https://user-images.githubusercontent.com/53864655/71870274-b9a98880-3158-11ea-90f2-551bd85364f6.png)
+
+## Usecase
+
+### 1.마카롱 가게 정보 제공
+
+![image](https://user-images.githubusercontent.com/53864655/72234394-2a94e880-3610-11ea-8a46-209f700611f7.png)
+
+### 2. 게시판 입력
+
+![image](https://user-images.githubusercontent.com/53864655/71870323-de056500-3158-11ea-828f-5923c551033d.png)
+
+### 3.로그인
+
+![image](https://user-images.githubusercontent.com/53864655/71870337-eb225400-3158-11ea-99ea-85f104ae9fe9.png)
+
+### 4.회원가입
+
+![image](https://user-images.githubusercontent.com/53864655/71870349-f1b0cb80-3158-11ea-8fd4-78d0fff8f314.png)
