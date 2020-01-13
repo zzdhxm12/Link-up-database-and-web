@@ -1,4 +1,4 @@
-# database
+# link up database and web
 Create my own web
 
 
