@@ -62,7 +62,7 @@ Create my own web
 
 ### 1.마카롱 가게 정보 제공
 
-![image](https://user-images.githubusercontent.com/53864655/71870318-d645c080-3158-11ea-86b7-aeee37458c01.png)
+![image](https://user-images.githubusercontent.com/53864655/72234394-2a94e880-3610-11ea-8a46-209f700611f7.png)
 
 ### 2. 게시판 입력
 
