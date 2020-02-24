@@ -8,41 +8,7 @@ Create my own web
 
 * Bitnami
 
-
-## Architecture
-
-### 1. 전체 구조도
-
-![image](https://user-images.githubusercontent.com/53864655/71870045-bc57ae00-3157-11ea-8fef-bf2d454ce8fd.png)
-
-
-
-### 2. Database 설계
-
-테이블 명 : macaron, member, comment, board
-* macaron 
-
-![image](https://user-images.githubusercontent.com/53864655/71870126-19ebfa80-3158-11ea-9669-dc53a7e52c7c.png)
-
-* member
-
-![image](https://user-images.githubusercontent.com/53864655/71870141-2a9c7080-3158-11ea-829f-c3145420524f.png)
-
-* comment
-
-![image](https://user-images.githubusercontent.com/53864655/71870162-456ee500-3158-11ea-96fc-aac92b619b78.png)
-
-* board
-
-![image](https://user-images.githubusercontent.com/53864655/71870185-5586c480-3158-11ea-987d-806a058f61cf.png)
-
-
-
-### 3. Flowchart
-
-![image](https://user-images.githubusercontent.com/53864655/71870213-70593900-3158-11ea-95dc-be3cacfd33ea.png)
-
-## UI Design
+## Usecase
 
 ### 1. 홈
 
@@ -90,6 +56,40 @@ Create my own web
 * 일반회원은 마카롱 가게 순위를 매기는데 투표와 게시판 후기글 작성이 가능 
 * 가게주인은 마카롱 가게 등록 및 가게 정보 입력이 가능
 * 관리자는 모든 DB관리, 게시판 관리가 가능
+
+
+## Architecture
+
+### 1. 전체 구조도
+
+![image](https://user-images.githubusercontent.com/53864655/71870045-bc57ae00-3157-11ea-8fef-bf2d454ce8fd.png)
+
+
+
+### 2. Database 설계
+
+테이블 명 : macaron, member, comment, board
+* macaron 
+
+![image](https://user-images.githubusercontent.com/53864655/71870126-19ebfa80-3158-11ea-9669-dc53a7e52c7c.png)
+
+* member
+
+![image](https://user-images.githubusercontent.com/53864655/71870141-2a9c7080-3158-11ea-829f-c3145420524f.png)
+
+* comment
+
+![image](https://user-images.githubusercontent.com/53864655/71870162-456ee500-3158-11ea-96fc-aac92b619b78.png)
+
+* board
+
+![image](https://user-images.githubusercontent.com/53864655/71870185-5586c480-3158-11ea-987d-806a058f61cf.png)
+
+
+
+### 3. Flowchart
+
+![image](https://user-images.githubusercontent.com/53864655/71870213-70593900-3158-11ea-95dc-be3cacfd33ea.png)
 
 
 ## Sequnce Diagram
